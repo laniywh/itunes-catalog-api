@@ -1,0 +1,23 @@
+{
+  "name": "itunes-catalog-api",
+  "version": "1.0.0",
+  "description": "A lightweight iTunes catalog API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lani Huang",
+  "license": "ISC",
+  "engine": {
+    "node": "^10.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14",
+    "request": "^2.88.0"
+  }
+}
