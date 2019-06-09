@@ -1,7 +1,10 @@
 const express = require('express');
 const request = require('request');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
+
 const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
@@ -11,8 +14,6 @@ app.get('/', function (req, res) {
     const protocol = req.secure ? 'https' : 'http';
     res.render('index', { site: protocol + '://' + host });
 });
-
-// app.use('/assets', express.static(__dirname + '/public'));
 
 app.get('/api/:term', function (req, res) {
 
